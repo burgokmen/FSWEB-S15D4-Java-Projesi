@@ -21,13 +21,13 @@ public class Main {
         strStack.push(String.valueOf(c));
       }
        // System.out.println(strStack);
-        String reversed = "";
+        StringBuilder reversed = new StringBuilder();
 
        // Iterator<String> iterator = strStack.iterator();
     while(!strStack.isEmpty()){
-        reversed += strStack.pop();
+        reversed.append(strStack.pop());
     }
     //System.out.println(reversed);
-        return reversed.equals(textClean);
+        return reversed.toString().equals(textClean);
     }
 }
